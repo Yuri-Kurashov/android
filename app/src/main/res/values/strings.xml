@@ -1,12 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="textview1">TextView</string>
-    <string name="btn_1">1</string>
-    <string name="btn_2">2</string>
-    <string name="btn_3">3</string>
-    <string name="text1">Pushed button1</string>
-    <string name="text2">Pushed button2</string>
-    <string name="text3">Pushed button3</string>
-    <string name="textButton3">Changing text button3</string>
+    <string name="just_text">Just text</string>
+    <string name="button1">Button</string>
+    <string name="todo">TODO</string>
+
 
 </resources>
