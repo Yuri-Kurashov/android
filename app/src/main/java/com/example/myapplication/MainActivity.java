@@ -20,10 +20,10 @@ Button button3;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = (TextView)findViewById(R.id.textView);
-        button1 = (Button)findViewById(R.id.button1);
-        button2 = (Button)findViewById(R.id.button2);
-        button3 = (Button)findViewById(R.id.button3);
+        textView = findViewById(R.id.textView);
+        button1 = findViewById(R.id.button1);
+        button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button3);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,11 +31,16 @@ Button button3;
                 textView.setText("Pushed button 1");
             }
         });
+        button2.setOnClickListener(this);
 
+    }
+    public void clickButton3 (View view) {
+        textView.setText("Pushed button 3");
     }
 
     @Override
     public void onClick(View view) {
-        
+        textView.setText("Pushed buton 2");
+
     }
 }
