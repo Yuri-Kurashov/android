@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="just_text">Just text</string>
-    <string name="button1">Button</string>
+    <string name="Pushed_back">Pushed back</string>
+    <string name="Pushed_change">Pushed change</string>
+    <string name="button1">Back</string>
+    <string name="button2">Change</string>
     <string name="todo">TODO</string>
 
 
