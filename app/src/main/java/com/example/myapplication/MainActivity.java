@@ -12,9 +12,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-Button button1;
-Button button2;
-TextView text;
+    Button button1;
+    Button button2;
+    TextView textView1;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,26 +25,24 @@ TextView text;
 
         button1 = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
-        text = findViewById(R.id.textView);
+        textView1 = findViewById(R.id.textView);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button:
-                        text.setText(R.string.Pushed_back);
+                        textView1.setText(R.string.hi);
                         break;
                     case R.id.button2:
-                        text.setText(R.string.Pushed_change);
+                        textView1.setText(R.string.cool);
                         break;
-
                 }
-            }
 
+            }
         };
         button1.setOnClickListener(onClickListener);
         button2.setOnClickListener(onClickListener);
-
 
     }
 
