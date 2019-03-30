@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         textView1 = findViewById(R.id.textView);
         imageView1 = findViewById(R.id.imageView);
-        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_48dp));
+        imageView1.setImageDrawable(getDrawable(R.drawable.ic_account_circle_black_48dp));
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (view.getId()) {
                     case R.id.button:
                         textView1.setText(R.string.hi);
-                        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_48dp));
+                        imageView1.setImageDrawable(getDrawable(R.drawable.ic_account_circle_black_48dp));
                         break;
                     case R.id.button2:
                         textView1.setText(R.string.cool);
-                        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_48dp));
+                        imageView1.setImageDrawable(getDrawable(R.drawable.ic_account_circle_black_48dp));
                         break;
                     case R.id.imageView:
                         textView1.setText(R.string.just_text);
-                        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_box_black_48dp));
+                        imageView1.setImageDrawable(getDrawable(R.drawable.ic_account_box_black_48dp));
                         break;
                 }
             }
