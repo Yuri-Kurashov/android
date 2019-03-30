@@ -34,12 +34,16 @@ public class MainActivity extends AppCompatActivity {
                 switch (view.getId()) {
                     case R.id.button:
                         textView1.setText(R.string.hi);
+                        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_48dp));
                         break;
                     case R.id.button2:
                         textView1.setText(R.string.cool);
+                        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_48dp));
                         break;
                     case R.id.imageView:
                         textView1.setText(R.string.just_text);
+                        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_box_black_48dp));
+                        break;
                 }
             }
         };
