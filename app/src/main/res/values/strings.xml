@@ -6,6 +6,7 @@
     <string name="button1">Change</string>
     <string name="button2">Change</string>
     <string name="todo">TODO</string>
+    <string name="dividing">Результат деления</string>
 
 
 </resources>
