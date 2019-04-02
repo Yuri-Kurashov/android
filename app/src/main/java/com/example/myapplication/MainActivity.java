@@ -5,11 +5,14 @@ import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,13 +58,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.imageView:
                         textView1.setText(R.string.just_text);
                         imageView1.setImageDrawable(getDrawable(R.drawable.ic_account_box_black_48dp));
-                        Log.d(TAG, "Обработка Image_Veiw");
-                        try {
-                            int i = 6/2;
-                            textView2.setText("результат деления =" + i);
-                        } catch (Exception e) {
-                            Log.d(TAG, "Делтить на 0 нельзя", e);
-                        }
+                        Log.d(TAG, "Нажато imageView");
+                        Toast toast = Toast.makeText (MainActivity.this, "Нажато imageView", Toast.LENGTH_LONG);
+                        toast.setGravity(Gravity.TOP, 0, 150);
+                        LinearLayout toastImage = (LinearLayout) toast.getView();
+                        ImageView imageView2 = new ImageView(MainActivity.this);
+                        imageView2.setImageDrawable(getDrawable(R.drawable.ic_cloud_queue_black_48dp));
+                        toastImage.addView(imageView2, 1);
+                        toast.show();
                         break;
                 }
             }
