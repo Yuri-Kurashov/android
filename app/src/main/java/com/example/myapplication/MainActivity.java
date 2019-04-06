@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button button1;
     Button button2;
+    Button button3;
     TextView textView1;
     TextView textView2;
     ImageView imageView1;
@@ -59,20 +60,32 @@ public class MainActivity extends AppCompatActivity {
                         textView1.setText(R.string.just_text);
                         imageView1.setImageDrawable(getDrawable(R.drawable.ic_account_box_black_48dp));
                         Log.d(TAG, "Нажато imageView");
-                        Toast toast = Toast.makeText (MainActivity.this, "Нажато imageView", Toast.LENGTH_LONG);
-                        toast.setGravity(Gravity.TOP, 0, 150);
-                        LinearLayout toastImage = (LinearLayout) toast.getView();
-                        ImageView imageView2 = new ImageView(MainActivity.this);
-                        imageView2.setImageDrawable(getDrawable(R.drawable.ic_cloud_queue_black_48dp));
-                        toastImage.addView(imageView2, 1);
+//                        Toast toast = Toast.makeText (MainActivity.this, "Нажато imageView", Toast.LENGTH_LONG);
+//                        toast.setGravity(Gravity.TOP, 0, 150);
+//                        LinearLayout toastImage = (LinearLayout) toast.getView();
+//                        ImageView imageView2 = new ImageView(MainActivity.this);
+//                        imageView2.setImageDrawable(getDrawable(R.drawable.ic_cloud_queue_black_48dp));
+//                        toastImage.addView(imageView2, 1);
+//                        toast.show();
+                        Toast toast = Toast.makeText(MainActivity.this, "Pushed imageView", Toast.LENGTH_LONG);
+                        toast.setGravity(Gravity.BOTTOM, 0 , 0);
                         toast.show();
                         break;
                 }
             }
         };
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
 
         button1.setOnClickListener(onClickListener);
         button2.setOnClickListener(onClickListener);
         imageView1.setOnClickListener(onClickListener);
     }
 }
+
+
